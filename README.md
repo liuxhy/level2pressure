@@ -112,8 +112,5 @@ Install all dependencies with:
 pip install -r requirements.txt
 ```
 
-## License
-This project is licensed under the MIT License - see the `LICENSE` file for details.
-
 ## Acknowledgments
 This package leverages **MetPy** for U.S. Standard Atmosphere calculations, as well as **xarray** and **numpy** for efficient handling and processing of multidimensional climate model data.
