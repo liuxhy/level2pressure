@@ -134,3 +134,9 @@ pip install -r requirements.txt
 
 ## Acknowledgments
 This package leverages **MetPy** for U.S. Standard Atmosphere calculations, as well as **xarray** and **numpy** for efficient handling and processing of multidimensional climate model data.
+
+## Author
+
+This package was created by [Xinhuiyu Liu, University of Virginia](https://github.com/liuxhy).
+
+Feel free to reach out with questions, suggestions, or contributions via GitHub or email.
