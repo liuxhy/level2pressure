@@ -2,12 +2,32 @@
 
 `level2pressure` is a Python package designed to convert vertical coordinates in CMIP6 climate model data to pressure levels. This is particularly useful for models that use hybrid sigma or hybrid height coordinates, allowing users to interpolate their data to standard pressure levels for easier comparison and analysis.
 
+## Why Convert to Pressure Levels?
+
+Climate and weather models often use hybrid coordinate systems, such as hybrid height and hybrid sigma-pressure coordinates, to capture atmospheric processes near the surface and in the free atmosphere. However, pressure levels are the standard for atmospheric analysis, as they simplify comparisons with observational data, standardize analyses across models, and make data interpretation more straightforward.
+
+Converting model data to pressure levels allows for:
+- **Consistency with Observational Data**: Many atmospheric observations (e.g., radiosondes, satellite data) are reported on pressure levels. Conversion facilitates direct comparisons.
+- **Cross-Model Comparisons**: Standardizing data on pressure levels makes it easier to compare outputs from different models.
+- **Simplified Analysis**: Pressure levels align with meteorological concepts, like the tropopause or jet stream, making data interpretation more intuitive.
+
+## Coordinate Systems
+
+### Hybrid Height Coordinate
+
+The **hybrid height coordinate** system combines terrain-following coordinates near the surface with fixed-height levels in the upper atmosphere. This allows models to accurately represent boundary-layer processes by following the terrain, while transitioning to fixed height levels higher up for stability.
+
+### Hybrid Sigma-Pressure Coordinate
+
+The **hybrid sigma-pressure coordinate** system uses terrain-following sigma coordinates near the surface and pressure-based coordinates in the free atmosphere. This approach captures surface-level processes accurately by following terrain, while using pressure levels aloft to better align with observational data.
+
 ## Features
 
 - Identify vertical coordinate types in NetCDF files (e.g., hybrid height, hybrid sigma-pressure).
 - Convert height levels to pressure levels using the U.S. Standard Atmosphere.
 - Interpolate data to a user-specified list of standard pressure levels.
 - Command-line interface (CLI) for easy use in workflows.
+
 
 ## Directory Structure
 
